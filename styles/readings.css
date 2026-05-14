@@ -1,0 +1,101 @@
+.readings-sec{
+    width: 100%;
+    padding-top: 4rem;
+}
+.readings-inner{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.reading{
+    width: 28%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.reading-top-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.reading-content h4, p{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+.reading-price span{
+    color: rgb(201, 114, 127);
+    font-weight: bold;
+}
+
+.reading-top-con button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(167, 88, 100);
+    color: white;
+}
+
+.reading-img-con{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.reading-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.reading-desc{
+    width: 90%;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 12px;
+}
+#longText{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+#longText.expanded {
+    -webkit-line-clamp: unset;
+}
+#toggleBtn {
+    color: rgb(167, 88, 100);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 900px) {
+    .readings-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .reading{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .reading-img-con{
+        width: 80%;
+        height: 20rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .reading-img-con{
+        width: 90%;
+    }
+}
